@@ -78,3 +78,28 @@ function stopDrawing() {
     active = false
 
 }
+let active = false
+let start_marker = new mapboxgl.Marker()    
+
+function startDrawing() {
+
+    active = true
+
+    start_marker.setLngLat(current_location)
+    start_marker.addTo(map)
+
+    draw_btn.style['background-color'] = "red"         // make the button red
+    draw_btn.style['color'] = "white"                  // make it's text white
+    draw_btn.value = 'Stop and save'                   // change the text to the opposite state
+
+}
+
+function stopDrawing() {
+
+    active = false
+
+    draw_btn.style['background-color'] = "white"      // make the button white again
+    draw_btn.style['color'] = "black"                 // make the text black
+    draw_btn.value = 'Start'                          // change the text
+
+}
