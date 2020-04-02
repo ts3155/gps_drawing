@@ -61,11 +61,15 @@ draw_btn.addEventListener('click', function() {
     console.log('clicked draw_btn')                 
 
 })
-let active = false       // keeps track of whether or not we're drawing
+let active = false
+let start_marker = new mapboxgl.Marker()    
 
 function startDrawing() {
 
     active = true
+
+    start_marker.setLngLat(current_location)
+    start_marker.addTo(map)
 
 }
 
