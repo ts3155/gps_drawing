@@ -61,3 +61,16 @@ draw_btn.addEventListener('click', function() {
     console.log('clicked draw_btn')                 
 
 })
+let active = false       // keeps track of whether or not we're drawing
+
+function startDrawing() {
+
+    active = true
+
+}
+
+function stopDrawing() {
+
+    active = false
+
+}
