@@ -51,3 +51,13 @@ map.on('click', function(event) {
     current_location = [event.lngLat.lng, event.lngLat.lat]
     console.log('clicked', current_location)        
 })
+// variable which references the HTML button element
+let draw_btn = document.getElementById('draw_btn')
+
+// a handler that is called when the button is clicked
+draw_btn.addEventListener('click', function() {
+
+    // print something in the console to test
+    console.log('clicked draw_btn')                 
+
+})
