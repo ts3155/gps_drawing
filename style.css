@@ -10,3 +10,8 @@ body, html {
     bottom: 0;
     width: 100%;
 }
+#draw_btn {
+    position: absolute;
+    left: 10px;
+    top: 200px;
+}
