@@ -103,3 +103,14 @@ function stopDrawing() {
     draw_btn.value = 'Start'                          // change the text
 
 }
+draw_btn.addEventListener('click', function() {
+
+    console.log('clicked draw_btn')
+
+    if (active) {            // if we're already drawing, stop drawing
+        stopDrawing()
+    } else {                    // otherwise, start drawing
+        startDrawing()
+    }
+
+})
